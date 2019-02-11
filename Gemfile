@@ -59,3 +59,7 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'pry-doc'
 end
+
+group :production do
+  gem 'pg', '0.21.0'
+end
