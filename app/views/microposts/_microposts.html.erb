@@ -27,15 +27,17 @@
 
             
 <%= link_to "Delete", micropost, method: :delete, data: { confirm: "You sure?" }, class: 'btn btn-danger btn-xs' %>
-
           
 <% end %>
+
+<%= render 'favorites/favo_button', micropost: micropost %>
 
         </div>
       </div>
     </li>
   
 <% end %>
+
 
   
 <%= paginate microposts %>
